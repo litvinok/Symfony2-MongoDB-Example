@@ -1,0 +1,21 @@
+<?php
+
+namespace Mongo\ExampleBundle\Document;
+
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+
+/**
+ * @MongoDB\Document
+ */
+class Some {
+
+    /**
+     * @MongoDB\Id
+     */
+    protected $id;
+
+    /**
+     * @MongoDB\Int
+     */
+    protected $rand;
+}

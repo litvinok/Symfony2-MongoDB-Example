@@ -1,0 +1,4 @@
+mongo_example:
+    resource: "@MongoExampleBundle/Resources/config/routing.yml"
+    prefix:   /
+

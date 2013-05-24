@@ -1,0 +1,3 @@
+mongo_example_homepage:
+    pattern:  /
+    defaults: { _controller: MongoExampleBundle:Default:index }
