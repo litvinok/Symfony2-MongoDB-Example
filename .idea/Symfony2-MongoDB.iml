@@ -6,12 +6,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="PHARS">
-        <CLASSES />
-        <SOURCES />
-      </library>
-    </orderEntry>
   </component>
 </module>
 
