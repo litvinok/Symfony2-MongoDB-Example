@@ -2,12 +2,12 @@
 
 namespace Mongo\ExampleBundle\Document;
 use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
-use Doctrine\Common\Collections\ArrayCollection;
+
 
 /**
  * @MongoDB\Document
  */
-class Content
+class Comment
 {
     /**
      * @MongoDB\Id
@@ -22,21 +22,21 @@ class Content
     /**
      * @MongoDB\String
      */
-    protected $title;
+    protected $name;
 
     /**
      * @MongoDB\String
      */
     protected $text;
 
-    /** @MongoDB\ReferenceMany( targetDocument="Comment", mappedBy="content", sort={"date"="desc"} ) */
-    public $comments;
+    /** @MongoDB\ReferenceOne(targetDocument="Content", inversedBy="comments") */
+    public $content;
 
-    function __construct()
+    public function __construct()
     {
         $this->date = new \DateTime();
-        $this->comments = new ArrayCollection();
     }
+
 
     /**
      * Get id
@@ -71,25 +71,25 @@ class Content
     }
 
     /**
-     * Set title
+     * Set name
      *
-     * @param string $title
+     * @param string $name
      * @return self
      */
-    public function setTitle($title)
+    public function setName($name)
     {
-        $this->title = $title;
+        $this->name = $name;
         return $this;
     }
 
     /**
-     * Get title
+     * Get name
      *
-     * @return string $title
+     * @return string $name
      */
-    public function getTitle()
+    public function getName()
     {
-        return $this->title;
+        return $this->name;
     }
 
     /**
@@ -115,32 +115,24 @@ class Content
     }
 
     /**
-     * Add comments
+     * Set content
      *
-     * @param Mongo\ExampleBundle\Document\Comment $comments
+     * @param Mongo\ExampleBundle\Document\Content $content
+     * @return self
      */
-    public function addComment(\Mongo\ExampleBundle\Document\Comment $comments)
+    public function setContent(\Mongo\ExampleBundle\Document\Content $content)
     {
-        $this->comments[] = $comments;
+        $this->content = $content;
+        return $this;
     }
 
     /**
-    * Remove comments
-    *
-    * @param <variableType$comments
-    */
-    public function removeComment(\Mongo\ExampleBundle\Document\Comment $comments)
-    {
-        $this->comments->removeElement($comments);
-    }
-
-    /**
-     * Get comments
+     * Get content
      *
-     * @return Doctrine\Common\Collections\Collection $comments
+     * @return Mongo\ExampleBundle\Document\Content $content
      */
-    public function getComments()
+    public function getContent()
     {
-        return $this->comments;
+        return $this->content;
     }
 }

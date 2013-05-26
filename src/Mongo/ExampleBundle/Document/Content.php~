@@ -2,6 +2,7 @@
 
 namespace Mongo\ExampleBundle\Document;
 use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @MongoDB\Document
@@ -14,23 +15,27 @@ class Content
     protected $id;
 
     /**
+     * @mongoDB\Date
+     */
+    protected $date;
+
+    /**
      * @MongoDB\String
      */
-    protected $name;
+    protected $title;
 
     /**
      * @MongoDB\String
      */
     protected $text;
 
-    /**
-     * @mongoDB\Date
-     */
-    protected $date;
+    /** @MongoDB\ReferenceMany( targetDocument="Comment", mappedBy="content", sort={"date"="desc"} ) */
+    public $comments;
 
     function __construct()
     {
-        $this -> date = new \DateTime();
+        $this->date = new \DateTime();
+        $this->comments = new ArrayCollection();
     }
 
     /**
@@ -44,25 +49,47 @@ class Content
     }
 
     /**
-     * Set name
+     * Set date
      *
-     * @param string $name
+     * @param date $date
      * @return self
      */
-    public function setName($name)
+    public function setDate($date)
     {
-        $this->name = $name;
+        $this->date = $date;
         return $this;
     }
 
     /**
-     * Get name
+     * Get date
      *
-     * @return string $name
+     * @return date $date
      */
-    public function getName()
+    public function getDate()
     {
-        return $this->name;
+        return $this->date;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     * @return self
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string $title
+     */
+    public function getTitle()
+    {
+        return $this->title;
     }
 
     /**
@@ -88,24 +115,32 @@ class Content
     }
 
     /**
-     * Set date
+     * Add comments
      *
-     * @param date $date
-     * @return self
+     * @param Mongo\ExampleBundle\Document\Comment $comments
      */
-    public function setDate($date)
+    public function addComment(\Mongo\ExampleBundle\Document\Comment $comments)
     {
-        $this->date = $date;
-        return $this;
+        $this->comments[] = $comments;
     }
 
     /**
-     * Get date
-     *
-     * @return date $date
-     */
-    public function getDate()
+    * Remove comments
+    *
+    * @param <variableType$comments
+    */
+    public function removeComment(\Mongo\ExampleBundle\Document\Comment $comments)
     {
-        return $this->date;
+        $this->comments->removeElement($comments);
+    }
+
+    /**
+     * Get comments
+     *
+     * @return Doctrine\Common\Collections\Collection $comments
+     */
+    public function getComments()
+    {
+        return $this->comments;
     }
 }

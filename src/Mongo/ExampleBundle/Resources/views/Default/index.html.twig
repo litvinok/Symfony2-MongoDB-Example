@@ -1,3 +1,11 @@
-MongoDB Example!
+{% extends "MongoExampleBundle::layout.html.twig" %}
 
-id: {{ id }}
+{% block content %}
+
+    <ul>
+    {% for item in items %}
+        <li><a href="{{ path('mongo_example_content', {id: item.id }) }}">{{ item.title }}</a></li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

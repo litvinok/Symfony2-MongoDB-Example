@@ -42,7 +42,7 @@ assetic:
 doctrine_mongodb:
     connections:
         default:
-            server: mongodb://localhost:27017
+            server: localhost:27017
             options: {}
     default_database: symfony2example
     document_managers:
