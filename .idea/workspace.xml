@@ -174,7 +174,7 @@
     <file path="/index.html.twig" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369829489871" ignored="false" />
     <file path="/Content.php" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369824334472" ignored="false" />
     <file path="/a.dummy" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369824610914" ignored="false" />
-    <file path="/DefaultController.php" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369828857483" ignored="false" />
+    <file path="/DefaultController.php" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369830318126" ignored="false" />
     <file path="/config.yml" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369656729913" ignored="false" />
     <file path="/Some.php" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369660112148" ignored="false" />
     <file path="$PROJECT_DIR$/vendor/doctrine/mongodb-odm/tests/Documents/File.php" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369657622493" ignored="false" />
@@ -393,8 +393,9 @@
     <file path="/Group.php" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369824443256" ignored="false" />
     <file path="/GroupData.php" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369823980801" ignored="false" />
     <file path="/routing.yml" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369828820267" ignored="false" />
-    <file path="/content.html.twig" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369829575930" ignored="false" />
-    <file path="/layout.html.twig" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369829536055" ignored="false" />
+    <file path="/content.html.twig" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369830412858" ignored="false" />
+    <file path="/layout.html.twig" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369830382717" ignored="false" />
+    <file path="/simple.css" changelist="f3ba1182-c5fc-4bea-a8e4-d0daafcb8b67" time="1369830603214" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -454,7 +455,7 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="64" selection-start="836" selection-end="843" vertical-scroll-proportion="-18.961538">
+            <state line="44" column="31" selection-start="1235" selection-end="1235" vertical-scroll-proportion="-23.076923">
               <folding>
                 <element signature="e#50#104#0" expanded="true" />
               </folding>
@@ -465,7 +466,7 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="9" selection-start="238" selection-end="238" vertical-scroll-proportion="-5.230769">
+            <state line="6" column="51" selection-start="142" selection-end="163" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
@@ -474,7 +475,7 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="224" selection-end="224" vertical-scroll-proportion="-8.5">
+            <state line="5" column="11" selection-start="117" selection-end="163" vertical-scroll-proportion="-3.2692308">
               <folding />
             </state>
           </provider>
@@ -491,19 +492,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="24" selection-start="1753" selection-end="1753" vertical-scroll-proportion="-24.846153">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="content.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/views/Default/content.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="16" selection-start="392" selection-end="392" vertical-scroll-proportion="0.33801168">
+            <state line="15" column="67" selection-start="365" selection-end="365" vertical-scroll-proportion="0.2982456">
               <folding />
             </state>
           </provider>
@@ -519,7 +511,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Mongo/ExampleBundle/Document/Counter.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/Mongo/ExampleBundle/Document/Menu.php" />
@@ -531,10 +522,11 @@
         <option value="$PROJECT_DIR$/src/Mongo/ExampleBundle/DataFixtures/MongoDB/ContentData.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Mongo/ExampleBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Mongo/ExampleBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/views/Default/content.html.twig" />
+        <option value="$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/public/css/simple.css" />
       </list>
     </option>
   </component>
@@ -726,6 +718,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony2-MongoDB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Experiment-Symfony2-MongoDB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExampleBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -997,13 +1019,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="14" selection-start="271" selection-end="271" vertical-scroll-proportion="0.11929824">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1053,21 +1068,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="64" selection-start="836" selection-end="843" vertical-scroll-proportion="-18.961538">
-          <folding>
-            <element signature="e#50#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Document/Content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="146" column="0" selection-start="2441" selection-end="2441" vertical-scroll-proportion="-74.07692">
           <folding>
             <element signature="e#47#103#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="22" selection-start="0" selection-end="22" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="24" selection-start="1753" selection-end="1753" vertical-scroll-proportion="0.75555557">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1080,37 +1100,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="24" selection-start="1753" selection-end="1753" vertical-scroll-proportion="-24.846153">
+        <state line="6" column="51" selection-start="142" selection-end="163" vertical-scroll-proportion="-3.9230769">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="31" selection-start="1235" selection-end="1235" vertical-scroll-proportion="-23.076923">
+          <folding>
+            <element signature="e#50#104#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="224" selection-end="224" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="9" selection-start="238" selection-end="238" vertical-scroll-proportion="-5.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="22" selection-start="0" selection-end="22" vertical-scroll-proportion="0.0">
+        <state line="5" column="11" selection-start="117" selection-end="163" vertical-scroll-proportion="-3.2692308">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mongo/ExampleBundle/Resources/views/Default/content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="392" selection-end="392" vertical-scroll-proportion="0.33801168">
+        <state line="15" column="67" selection-start="365" selection-end="365" vertical-scroll-proportion="0.2982456">
           <folding />
         </state>
       </provider>
