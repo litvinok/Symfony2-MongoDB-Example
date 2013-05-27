@@ -1,4 +1,1 @@
-Experiment-Symfony2-MongoDB
-===========================
-
-It just expirement for expirience.
+Symfony2-MongoDB-Example
