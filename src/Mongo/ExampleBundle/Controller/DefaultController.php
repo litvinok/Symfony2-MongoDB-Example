@@ -16,8 +16,11 @@ class DefaultController extends Controller
             ->getRepository('MongoExampleBundle:Content')
             ->findBy(array());
 
+        $dbs = $this->get('doctrine_mongodb') -> getConnection() -> getMongo() -> listDBs();
+
         return $this->render('MongoExampleBundle:Default:index.html.twig', array(
-            'items' => $items
+            'items' => $items,
+            'dbs' => $dbs,
         ));
     }
 
