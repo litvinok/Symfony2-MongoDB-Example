@@ -49,6 +49,11 @@ doctrine_mongodb:
         default:
             auto_mapping: true
             mappings:
+                loggable:
+                    type: annotation
+                    alias: Gedmo
+                    prefix: Gedmo\Loggable\Document
+                    dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Document"
                 translatable:
                     type: annotation
                     alias: Gedmo
@@ -73,3 +78,4 @@ stof_doctrine_extensions:
     mongodb:
         default:
             timestampable: true
+            loggable: true

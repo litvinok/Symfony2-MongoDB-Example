@@ -12,14 +12,14 @@ class DefaultController extends Controller
 {
     public function indexAction( Request $request)
     {
-        $mongo = $this->get('doctrine_mongodb');
+        $doctrine = $this->get('doctrine_mongodb');
 
-        $items = $mongo
+        $items = $doctrine
             ->getRepository('MongoExampleBundle:Content')
             ->findBy(array());
 
-        $dbs = $mongo -> getConnection() -> getMongo() -> listDBs();
-        $path = $mongo -> getRepository('MongoExampleBundle:Path') -> childrenHierarchy();
+        $dbs = $doctrine -> getConnection() -> getMongo() -> listDBs();
+        $path = $doctrine -> getRepository('MongoExampleBundle:Path') -> childrenHierarchy();
 
         return $this->render('MongoExampleBundle:Default:index.html.twig', array(
             'items' => $items,
@@ -34,6 +34,16 @@ class DefaultController extends Controller
         $content = $doctrine
             ->getRepository('MongoExampleBundle:Content')
             ->find($id);
+
+        $repo = $doctrine -> getRepository('Gedmo\Loggable\Document\LogEntry');
+
+        $content -> setText( $content -> getText() . ' '. rand(1,10) );
+
+        $em = $doctrine->getManager();
+        $em->persist($content);
+        $em->flush();
+
+        $history = $repo->getLogEntries($content);
 
         $comment = new Comment();
 
@@ -59,6 +69,7 @@ class DefaultController extends Controller
 
         return $this->render('MongoExampleBundle:Default:content.html.twig', array(
             'content' => $content,
+            'history' => $history,
             'form' => $form->createView()
         ));
     }

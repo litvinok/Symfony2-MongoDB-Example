@@ -8,6 +8,14 @@
 
     <a href="{{ path('mongo_example_homepage') }}">Back</a>
 
+    <ul>
+        {% for item in history %}
+            <li>
+                {{ item.action }} - {{ item.loggedAt|date('d.m.Y H:i:s') }}
+            </li>
+        {% endfor %}
+    </ul>
+
     <h3>Comments</h3>
 
     {% for comment in content.comments %}
