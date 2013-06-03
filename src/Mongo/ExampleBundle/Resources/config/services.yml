@@ -2,9 +2,6 @@ parameters:
 #    mongo_example.example.class: Mongo\ExampleBundle\Example
 
 services:
-#    mongo_example.example:
-#        class: %mongo_example.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
 
     gedmo.listener.tree:
         class: Gedmo\Tree\TreeListener
