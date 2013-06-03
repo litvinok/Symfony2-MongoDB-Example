@@ -21,6 +21,20 @@
     {% endspaceless %}
 {% endmacro %}
 
+{% macro nodeBuilder(current) %}
+    <li>
+        {{ current.title }}
+        {% if current.__children %}
+            <ul>
+                {% for item in current.__children %}
+                    {{ _self.nodeBuilder(item) }}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </li>
+
+{% endmacro %}
+
 {% block content %}
 
     <ul>
@@ -42,5 +56,13 @@
             <th>{{ _self.bytesToSize(dbs.totalSize) }}</th>
         </tr>
     </table>
+
+
+    <h3>Tree / MaterializedPath</h3>
+    <ul>
+    {% for item in path %}
+        {{ _self.nodeBuilder(item) }}
+    {% endfor %}
+    </ul>
 
 {% endblock %}

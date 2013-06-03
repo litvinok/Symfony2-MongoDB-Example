@@ -6,21 +6,25 @@ use Doctrine\ODM\MongoDB\Mapping\Annotations\ObjectId;
 use Mongo\ExampleBundle\Document\Comment;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Validator\Tests\Fixtures\ConstraintAValidator;
 
 class DefaultController extends Controller
 {
     public function indexAction( Request $request)
     {
+        $mongo = $this->get('doctrine_mongodb');
 
-        $items = $this->get('doctrine_mongodb')
+        $items = $mongo
             ->getRepository('MongoExampleBundle:Content')
             ->findBy(array());
 
-        $dbs = $this->get('doctrine_mongodb') -> getConnection() -> getMongo() -> listDBs();
+        $dbs = $mongo -> getConnection() -> getMongo() -> listDBs();
+        $path = $mongo -> getRepository('MongoExampleBundle:Path') -> childrenHierarchy();
 
         return $this->render('MongoExampleBundle:Default:index.html.twig', array(
             'items' => $items,
             'dbs' => $dbs,
+            'path' => $path,
         ));
     }
 

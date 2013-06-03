@@ -48,6 +48,17 @@ doctrine_mongodb:
     document_managers:
         default:
             auto_mapping: true
+            mappings:
+                translatable:
+                    type: annotation
+                    alias: Gedmo
+                    prefix: Gedmo\Translatable\Document
+                    dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Document"
+                tree:
+                    type: annotation
+                    alias: Gedmo
+                    prefix: Gedmo\Document
+                    dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Document"
 
 # Swiftmailer Configuration
 swiftmailer:

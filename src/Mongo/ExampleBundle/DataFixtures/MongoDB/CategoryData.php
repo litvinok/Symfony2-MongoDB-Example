@@ -16,17 +16,14 @@ class CategoryData implements FixtureInterface
         $food->addTranslation(new CategoryTranslation('lt', 'title', 'Maistas'));
 
         $fruits = new Category;
-        $fruits->setParent($food);
         $fruits->setTitle('Fruits');
         $fruits->addTranslation(new CategoryTranslation('lt', 'title', 'Vaisiai'));
 
         $apple = new Category;
-        $apple->setParent($fruits);
         $apple->setTitle('Apple');
         $apple->addTranslation(new CategoryTranslation('lt', 'title', 'Obuolys'));
 
         $milk = new Category;
-        $milk->setParent($food);
         $milk->setTitle('Milk');
         $milk->addTranslation(new CategoryTranslation('lt', 'title', 'Pienas'));
 
